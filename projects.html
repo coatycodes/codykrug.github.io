@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="text-zinc-200 bg-[length:1920px_1080px] md:bg-[length:1920px_1080px]" style="background-image: url('https://wallpaperaccess.com/full/439712.jpg')">
+  <nav class="p-4 bg-zinc-800 shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+        <img class="h-10 inline"
+          src="https://assets.onlinelabels.com/images/clip-art/Scout/Orange%20Planet-196180.png">
+          <a href="http://127.0.0.1:5500/dist/index.html">C | K</a>
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-auto md:static absolute bg-zinc-800 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 my-2 md:my-0">
+        <a href="http://127.0.0.1:5500/dist/about.html#" class="text-xl hover:text-amber-600 duration-500">ABOUT</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="http://127.0.0.1:5500/dist/projects.html" class="text-xl hover:text-amber-600 duration-500">PROJECTS</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="http://127.0.0.1:5500/dist/resume.html" class="text-xl hover:text-amber-600 duration-500">RESUME</a>
+      </li>
+<h2 class=""></h2>
+    </ul>
+  </nav>
+
+  <div class="projectCon flex items-center justify-center p-9 overflow-y-scroll">
+    <div class="cardCon mt-20 p-42 text-zinc-200 h-96 mb-40 md:w-2/4">
+      <div class="cardBody mx-auto bg-zinc-800 rounded-2xl p-7">
+        <h1 class="cardTitle text-4xl text-amber-600 pb-2">Projects</h1>
+        <hr>
+        <div class="info">
+          <h2 style="font-size: 1.4rem;" class="text-center pt-8 underline"><a href="https://twitter.com/mythicleaders" target="_blank" rel="noopener noreferrer" class="hover:text-amber-600 duration-500">Mythic+ Leaderboards</a></h2>
+          <div class="justify-center items-center text-center pt-3">
+            <img src="/project_pics/mpluslb.png" style="outline: 1px solid whitesmoke;" class= "w-2/3 rounded-2xl mx-auto">
+          </div>
+          <p class="mt-10 flex-column text-center italic">Twitter bot written in Python that interacts with Raider.io's API to get a multitude of information on the Mythic+ leaderboards for a specific dungeon in World of Warcraft. Information is then stored in variables, formatted properly, then interacts with Twitter's API to tweet the info. The bot tweets one dungeon's leaderboards once per hour at the same time everyday, 8 times for all 8 dungeons and is scheduled to do that via Task Scheduler.
+          </p>
+          <h2 style="font-size: 1.4rem;" class="text-center pt-8 underline"><a href="https://coatycodes.github.io/ target="_blank" rel="noopener noreferrer" class="hover:text-amber-600 duration-500"> Gamer's Block</a></h2>
+          <div class="justify-center items-center text-center pt-3">
+            <img src="/project_pics/gamersblock.png" style="outline: 1px solid whitesmoke;" class= "w-2/3 rounded-2xl mx-auto">
+          </div>
+          <p class="mt-10 flex-column text-center italic">Side project that suggests random games using Fetch API to make calls to RAWG’s API gaming database to return a description and cover image which is then styled with CSS.
+          </p>
+          <h2 style="font-size: 1.4rem;" class="text-center pt-8 underline"><a href="https://codykrug.itch.io/te-island" target="_blank" rel="noopener noreferrer" class="hover:text-amber-600 duration-500">TE Island Game (Demo)</a></h2>
+          <div class="justify-center items-center text-center pt-3">
+            <img src="https://img.itch.zone/aW1nLzc2OTY0NTMucG5n/original/RUderv.png" style="outline: 1px solid whitesmoke;" class= "w-2/3 rounded-2xl mx-auto">
+          </div>
+          <p class="mt-10 flex-column text-center italic">Simple game still in development built in Unity Engine and scripts are written in C# for the movement, physics and dialogue. Used Mystic Woods free asset pack curated by GameEndeavor. 
+          </p>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+</body>
+
+</html>

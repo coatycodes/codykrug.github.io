@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="text-zinc-200 bg-[length:1920px_1080px] md:bg-[length:1920px_1080px]" style="background-image: url('https://wallpaperaccess.com/full/439712.jpg')">
+  <nav class="p-4 bg-zinc-800 shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between items-center">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+        <img class="h-10 inline"
+          src="https://assets.onlinelabels.com/images/clip-art/Scout/Orange%20Planet-196180.png">
+          <a href="http://127.0.0.1:5500/dist/index.html">C | K</a>
+      </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="md:flex md:items-center z-auto md:static absolute bg-zinc-800 w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 my-2 md:my-0 text-zinc-200">
+        <a href="http://127.0.0.1:5500/dist/about.html#" class="text-xl hover:text-amber-600 duration-500">ABOUT</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="http://127.0.0.1:5500/dist/projects.html" class="text-xl hover:text-amber-600 duration-500">PROJECTS</a>
+      </li>
+      <li class="mx-4 my-6 md:my-0">
+        <a href="http://127.0.0.1:5500/dist/resume.html" class="text-xl hover:text-amber-600 duration-500">RESUME</a>
+      </li>
+<h2 class=""></h2>
+    </ul>
+  </nav>
+
+  <div class="projectCon flex items-center justify-center p-9 overflow-y-scroll">
+    <div class="cardCon mt-20 p-42 text-zinc-200 h-96 mb-40">
+      <div class="cardBody mx-auto bg-zinc-800 rounded-2xl p-7">
+        <h1 class="cardTitle text-4xl text-amber-600 pb-2">About Me</h1>
+        <hr>
+        <div class="info pt-2" style="font-size: 1.4rem;">
+          <p class="pb-1">My name is <span class="text-amber-600">Cody Krug</span>, I'm <span class="text-amber-600">27</span> Years old and I was born and raised in <span class="text-amber-600">Cincinnati, OH</span>.</p>
+          <p class="pb-1">I grew up in Norwood Ohio and went to Norwood City Schools; I graduated from NHS in 2014.</p>
+          <p class="pb-1" >I'm currently a student at the coding bootamp <span class="text-amber-600">Tech Elevator</span> in the <span class="text-amber-600">Java</span> cohort.</p>
+          <p class="pb-1"> My development interests  range from <span class="text-amber-600">Web3</span> and <span class="text-amber-600">Full Stack</span> web development, to <span class="text-amber-600">Game</span> development.</p>
+          <p class="pb-1"> I'm an <span class="text-amber-600">extremely</span> hard worker and love<span class="text-amber-600"> learning</span> and acquiring new skills.</p>
+          <p class="pb-1">At the moment I'm self teaching <span class="text-amber-600">C#</span> along with <span class="text-amber-600">Unity</span> for game development.</p>
+          <p>I'm also learning <span class="text-amber-600">Python </span>to write scripts and interact with various APIs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    function Menu(e){
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
+    }
+  </script>
+</body>
+
+</html>
